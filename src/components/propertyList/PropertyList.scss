@@ -1,0 +1,42 @@
+.pList {
+  width: 100%;
+  max-width: 1024px;
+  //   max-height: 270px;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+
+  .pListItem {
+    flex: 1;
+    cursor: pointer;
+
+    .pListImg {
+      max-width: 450px;
+      max-height: 162px;
+      object-fit: cover;
+      overflow: hidden;
+
+      img {
+        border-radius: 1%;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    // .pListTitles {
+    //   //   display: inline;
+    //   display: flex;
+    //   flex-direction: column;
+    //   margin: 0;
+    // }
+
+    .pListTitles > h1 {
+      font-size: 18px;
+      margin-bottom: 2px;
+    }
+    .pListTitles > h2 {
+      display: inline;
+      font-size: 16px;
+    }
+  }
+}
