@@ -1,0 +1,39 @@
+@import "../../global.scss";
+
+.navbar {
+  height: 50px;
+  // background: linear-gradient(
+  //   90deg,
+  //   rgba(15, 100, 198, 0.134) 23%,
+  //   rgba(167, 180, 24, 0.416) 78%
+  // );
+  background-color: darkblue;
+  display: flex;
+  justify-content: center;
+
+  .navContainer {
+    width: 100%;
+    max-width: 1024px;
+    // color: blueviolet;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-weight: 700;
+  }
+
+  .navItems {
+    .navButton {
+      margin-right: 4px;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      color: rgb(154, 77, 237);
+      font-weight: 700;
+      border-radius: 4px;
+    }
+  }
+}
