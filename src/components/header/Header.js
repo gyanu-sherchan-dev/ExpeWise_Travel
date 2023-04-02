@@ -33,6 +33,8 @@ const Header = ({ type }) => {
     room: 1,
   });
 
+  console.log(destination, date, options);
+
   const navigate = useNavigate();
 
   const handleOption = (name, operation) => {
@@ -43,7 +45,7 @@ const Header = ({ type }) => {
       };
     });
   };
-
+  console.log(destination, date, options);
   const handleSearch = () => {
     navigate("/hotels", { state: { destination, date, options } });
   };
