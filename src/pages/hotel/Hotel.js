@@ -33,6 +33,17 @@ const Hotel = () => {
     setSlideIndex(i);
     setOpen(true);
   };
+
+  const handleMove = (direction) => {
+    let newSlideIndex;
+    if (direction === "l") {
+      newSlideIndex = slideIndex === 0 ? 5 : slideIndex - 1;
+    } else {
+      newSlideIndex = slideIndex === 5 ? 0 : slideIndex + 1;
+    }
+
+    setSlideIndex(newSlideIndex);
+  };
   return (
     <div>
       <NavBar />
@@ -40,16 +51,19 @@ const Hotel = () => {
       <div className="hotelContainer">
         {open && (
           <div className="slider">
-            <i
-              class="fa-solid fa-circle-xmark"
-              className="close"
-              // onClick={() => setOpen(!open)}
-            ></i>
-            <i class="fa-solid fa-circle-arrow-left" className="arrow"></i>
+            <div className="close" onClick={() => setOpen(false)}>
+              <i className="fa-solid fa-circle-xmark"></i>
+            </div>
+
+            <div className="arrow" onClick={() => handleMove("l")}>
+              <i className="fa-solid fa-circle-arrow-left"></i>
+            </div>
             <div className="sliderWrapper">
               <img src={photos[slideIndex].src} alt="" className="sliderImg" />
             </div>
-            <i class="fa-solid fa-circle-arrow-right" className="arrow"></i>
+            <div className="arrow" onClick={() => handleMove("r")}>
+              <i className="fa-solid fa-circle-arrow-right"></i>
+            </div>
           </div>
         )}
         <div className="hotelWrapper">
