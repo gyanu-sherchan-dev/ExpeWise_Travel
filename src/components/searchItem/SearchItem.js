@@ -1,17 +1,22 @@
 import React from "react";
 import "./SearchItem.scss";
+import { useNavigate } from "react-router-dom";
 
 const SearchItem = () => {
+  const navigate = useNavigate();
+  const checkAvaibility = () => {
+    navigate("/hotels/id");
+  };
   return (
     <div className="searchItem">
       <div className="siImg">
         <img
-          src="https://images.unsplash.com/photo-1668169064092-04dc2c657d85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+          src="https://images.unsplash.com/photo-1565182999561-18d7dc61c393?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
           alt=""
         />
       </div>
       <div className="siDesc">
-        <h1 className="siTitle">Tower Street Apartment</h1>
+        <h1 className="siTitle">Vista Views Apartment</h1>
         <span className="siDistance">400m from center</span>
         <span className="siTaxiOp">Free airport Taxi</span>
         <span className="siSubTitle">
@@ -33,7 +38,9 @@ const SearchItem = () => {
         <div className="siDetailTexts">
           <span className="siPrice">$123</span>
           <span className="siTaxOp">Includes taxes and fees</span>
-          <button className="siCheckButton">See availability</button>
+          <button className="siCheckButton" onClick={checkAvaibility}>
+            See availability
+          </button>
         </div>
       </div>
     </div>
