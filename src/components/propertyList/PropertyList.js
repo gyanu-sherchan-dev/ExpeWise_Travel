@@ -7,7 +7,7 @@ const PropertyList = () => {
       <div className="pListItem">
         <div className="pListImg">
           <img
-            src="https://images.unsplash.com/photo-1514662792719-eae794750d39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+            src="https://images.unsplash.com/photo-1469796466635-455ede028aca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
             alt=""
           />
         </div>
@@ -32,7 +32,7 @@ const PropertyList = () => {
       <div className="pListItem">
         <div className="pListImg">
           <img
-            src="https://images.unsplash.com/photo-1611441085268-7674a97a0905?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+            src="https://images.unsplash.com/photo-1675657144410-0f601cf4edbd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
             alt=""
             className="pListImg"
           />

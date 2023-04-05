@@ -2,23 +2,37 @@
 
 .navbar {
   height: 50px;
-  // background: linear-gradient(
-  //   90deg,
-  //   rgba(15, 100, 198, 0.134) 23%,
-  //   rgba(167, 180, 24, 0.416) 78%
-  // );
   background-color: darkblue;
   display: flex;
   justify-content: center;
 
   .navContainer {
-    width: 100%;
+    width: 90%;
     max-width: 1024px;
-    // color: blueviolet;
     color: wheat;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    // Media query for medium screens
+    @media (max-width: 992px) {
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 10px;
+
+      gap: 20px;
+    }
+
+    // Media query for small screens
+    @media (max-width: 576px) {
+      align-items: center;
+      justify-content: space-around;
+      padding: 10px;
+
+      .logo {
+        margin-bottom: 10px;
+      }
+    }
   }
 
   .logo {

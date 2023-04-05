@@ -111,3 +111,103 @@
     }
   }
 }
+
+/* For medium screens */
+@media only screen and (max-width: 768px) {
+  .searchItem {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    .siImg {
+      height: auto;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .siDesc {
+      flex: none;
+
+      .siTitle {
+        font-size: 16px;
+      }
+
+      .siSubTitle {
+        font-size: 10px;
+      }
+
+      .siFeatures {
+        font-size: 10px;
+      }
+    }
+
+    .siDetails {
+      flex: none;
+
+      .siRating {
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .siDetailTexts {
+        text-align: center;
+        margin-top: 10px;
+
+        .siPrice {
+          font-size: 20px;
+        }
+
+        .siCheckButton {
+          padding: 8px 5px;
+        }
+      }
+    }
+  }
+}
+
+/* For small screens */
+@media only screen and (max-width: 480px) {
+  .searchItem {
+    .siImg {
+      height: 150px;
+    }
+
+    .siDesc {
+      .siTitle {
+        font-size: 14px;
+      }
+
+      .siSubTitle {
+        font-size: 8px;
+      }
+
+      .siFeatures {
+        font-size: 8px;
+      }
+    }
+
+    .siDetails {
+      .siRating {
+        flex-direction: column;
+        gap: 5px;
+
+        button {
+          font-size: 10px;
+          padding: 2px;
+        }
+      }
+
+      .siDetailTexts {
+        .siPrice {
+          font-size: 18px;
+        }
+
+        .siCheckButton {
+          font-size: 12px;
+          padding: 8px 5px;
+        }
+      }
+    }
+  }
+}
